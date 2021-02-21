@@ -1,0 +1,16 @@
+spring:
+   dataSource:
+      url=jdbc:mysql://localhost/gestionstock?createDatabaseIfNotExist=true
+      username = root
+      password = root
+      driverClassName=com.mysql.cj.jdbc.Driver
+   jpa:
+      datdabse: MYSQL
+      showsql: false
+   hibernate:
+      ddl-auto: update
+   properties:
+      hibernate:
+         dialect: HSQLDialect
+server:
+   port: 8081
